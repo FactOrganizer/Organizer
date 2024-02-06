@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizer</h1>
+        <div>
+            <h2>Add Note</h2>
+            <input type="text" id="noteContent" placeholder="Enter note content">
+            <label><input type="checkbox" id="importantCheckbox"> Important</label>
+            <label><input type="checkbox" id="quickCheckbox"> Quick</label>
+            <input type="date" id="dueDate">
+            <button onclick="addNote()">Add Note</button>
+        </div>
+        <div>
+            <h2>Notes</h2>
+            <div id="notesContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
